@@ -1,0 +1,48 @@
+.add-user-page-container {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+
+  display: flex;
+}
+
+.add-user-page {
+  padding: 2rem 1rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+
+  margin: auto;
+  width: min(500px, 100% - 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-user-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.add-user-button {
+  border: none;
+  outline: none;
+  background-color: var(--fill-color);
+  height: 100%;
+  padding: 1rem;
+
+  color: white;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  min-width: 100%;
+
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  margin-top: 1.5rem;
+}

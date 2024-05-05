@@ -1,0 +1,46 @@
+.add-folder-page {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  padding: 4rem;
+}
+
+.add-folder-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.add-folder-container {
+  width: min(450px, 100% - 3rem);
+  margin: auto;
+
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1.5rem;
+}
+
+.add-folder-container > * {
+  width: 100%;
+}
+
+.add-folder-button {
+  border: none;
+  outline: none;
+  padding: 0.7rem 0;
+  font-size: 0.9rem;
+  color: white;
+  background-color: black;
+
+  border-radius: 6px;
+
+  margin-top: 0.5rem;
+
+  cursor: pointer;
+}

@@ -1,0 +1,128 @@
+.signup-container {
+  width: 100vw;
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-color);
+}
+
+.signup-page {
+  margin: auto;
+  
+
+  width: min(500px, 90%);
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 3rem 2rem;
+
+  border-radius: 30px;
+  background-color: var(--white);
+}
+
+.signup-title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.signup-subtitle {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+
+  text-align: center;
+
+  color: black;
+}
+
+.signup-form {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.signup-label-and-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  position: relative;
+}
+
+.signup-label-and-input label {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.signup-label-and-input input {
+  height: 2.5rem;
+  border-radius: 5px;
+  padding: 0 1rem;
+
+  outline: none;
+  border: 1px solid var(--outline-color);
+}
+
+.signup-label-and-input img {
+  height: 1.4rem;
+  width: 1.4rem;
+
+  position: absolute;
+
+  right: 0.7rem;
+  top: 70%;
+  transform: translateY(-50%);
+
+  cursor: pointer;
+}
+.signup-forgot-password {
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  margin-left: auto;
+}
+
+.signup-button {
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--fill-color);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  color: var(--white);
+
+  transition: 0.2s all ease-in-out;
+}
+
+.signup-button:hover {
+  background-color: var(--base-color);
+}
+
+.terms-and-conditions-text {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.link-text {
+  color: #cbc3c3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 490px) {
+  .signup-page {
+    padding: 2rem 1rem;
+    border-radius: 15px;
+  }
+}

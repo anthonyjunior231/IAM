@@ -1,0 +1,98 @@
+.permissions-file {
+  display: grid;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.permissions-file input {
+  max-width: fit-content;
+}
+
+.permissions-file-pic-and-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.permissions-file-pic-and-name div {
+  display: flex;
+  flex-direction: column;
+}
+
+.permissions-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.permissions-email {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.view-profile-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.view-profile-cont div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.permission-options-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.permissions-file-options-absolute-container {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  padding: 1rem 0.5rem;
+  width: 20rem;
+
+  display: flex;
+  flex-direction: column !important;
+  gap: 0.5rem;
+  border-radius: 14px;
+
+  background-color: white;
+  outline: 1px solid var(--outline-color);
+  z-index: 3;
+}
+
+.permissions-file-options-absolute-container-file {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+
+  transition: 0.2s all ease-in-out;
+
+  width: 100%;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.permissions-file-options-absolute-container-file:last-child {
+  color: red;
+}
+
+.permissions-file-options-absolute-container-file span {
+  font-size: 0.9rem;
+}
+.permissions-file-options-absolute-container-file:hover {
+  background-color: var(--hover-color);
+}

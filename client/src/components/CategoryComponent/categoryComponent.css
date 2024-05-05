@@ -1,0 +1,18 @@
+.category-component {
+  display: grid;
+  grid-template-columns:
+    minmax(100px, 1fr)
+    minmax(400px, 4fr)
+    minmax(250px, 1fr)
+    minmax(100px, 0.7fr);
+
+  gap: 1.5rem;
+}
+
+.category-component span {
+  font-size: 0.9rem;
+}
+.category-component-clickable {
+  cursor: pointer;
+  font-size: 0.9rem;
+}

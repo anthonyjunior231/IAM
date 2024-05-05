@@ -1,0 +1,57 @@
+.overview-file {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 4fr) minmax(100px, 1fr)
+    minmax(150px, 3fr);
+  gap: 1rem;
+
+  align-items: center;
+}
+
+.overview-file input {
+  max-width: fit-content;
+}
+
+.overview-file-name-and-pic-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.overview-file-name-and-pic-cont div {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-file-name {
+  font-weight: 500;
+}
+
+.overview-file-email {
+  font-size: 0.8rem;
+}
+
+.overview-file-view-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview-file-view-profile div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.overview-status-text {
+  color: var(--tertiary-text-color);
+}
+.overview-file-view-profile div span {
+  cursor: pointer;
+}
+.overview-file-view-profile img {
+  cursor: pointer;
+}

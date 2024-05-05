@@ -1,0 +1,9 @@
+.folder-page {
+  padding: 2rem;
+}
+
+.folder-page-folders {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+:root {
+  --bg-color: #cce3fa;
+  --white: #ffffff;
+  --outline-color: #ececec;
+  --fill-color: #0073e6;
+  --base-color: #0060c0;
+  --secondary-text-color: #808080;
+  --hover-color: #f7f7f7;
+  --tertiary-text-color: #2a353d;
+  --slider-color: #34c759;
+}
+
+html {
+  font-family: "Satoshi-Variable", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #000;
+  animation: spin 1s infinite linear;
+  position: relative;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-top-color: #f00; /* Red */
+  animation: spin 1.5s infinite linear;
+}
+
+.spinner::after {
+  border-top-color: #00f; /* Blue */
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("./assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("./assets/fonts/Satoshi-Variable.woff") format("woff"),
+    url("./assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}

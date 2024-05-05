@@ -1,0 +1,104 @@
+.file {
+  display: grid;
+  grid-template-columns:
+    minmax(250px, 5fr) minmax(200px, 4fr)
+    minmax(60px, 1.4fr) minmax(200px, 3.5fr);
+  align-items: center;
+  padding: 0.5rem 0;
+
+  gap: 1rem;
+
+  cursor: pointer;
+}
+
+.file input {
+  max-width: fit-content;
+}
+
+.filename-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.uploaded-by-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  align-items: center;
+}
+
+.uploaded-by-cont div {
+  display: flex;
+}
+
+.file-name-text {
+  font-size: 1rem;
+}
+
+.file-email-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.last-modified-and-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last-modified-and-options img {
+  cursor: pointer;
+}
+
+.file-size-text,
+.file-last-modified-text {
+  font-size: 0.9rem;
+}
+
+.file-options {
+  position: relative;
+  cursor: pointer;
+}
+
+.file-options-absolute-container {
+  position: absolute;
+  right: 0;
+  top: 100%;
+
+  padding: 1rem 0.5rem;
+
+  width: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 14px;
+
+  background-color: white;
+  outline: 1px solid var(--outline-color);
+  z-index: 3;
+}
+
+.file-options-absolute-container div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+
+  transition: 0.2s all ease-in-out;
+}
+/* .file-options-absolute-container div:last-child {
+  color: red;
+} */
+
+.file-options-absolute-container div span {
+  font-size: 0.9rem;
+}
+.file-options-absolute-container div:hover {
+  background-color: var(--hover-color);
+}

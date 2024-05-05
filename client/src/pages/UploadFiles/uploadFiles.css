@@ -1,0 +1,128 @@
+.file-upload-content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  height: 100%;
+}
+
+.file-upload-content {
+  margin: auto;
+
+  width: min(500px, 95%) !important;
+
+  border: 1px solid #e3e3e3;
+}
+
+.file-upload-absolute {
+  width: 100%;
+}
+
+.file-upload-upper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  span {
+    font-size: 0.9em;
+  }
+}
+
+.file-upload-content {
+  margin: auto;
+  padding: 2em;
+  width: 100%;
+
+  /* border: 1px solid var(--outline-color); */
+  border-radius: 36px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.file-upload-content > * {
+  min-width: 100%;
+}
+
+.upload-files-text {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.file-upload-input-container {
+  border: 1px dashed black;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+  padding: 0.5em 4em 0.5em 4em;
+  cursor: pointer;
+
+  min-height: 8rem;
+  max-height: 8rem;
+
+  min-width: 100%;
+}
+.file-upload-input-container p {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.file-upload-buttons-container {
+  margin-top: 2.5em;
+
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5em;
+}
+
+.file-upload-buttons-container button {
+  height: 2.45rem;
+  width: 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  font-size: 0.9em;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.cancel-button {
+  border: 1px solid black;
+}
+
+.upload-button {
+  background-color: var(--fill-color);
+  color: white;
+}
+
+.upload-file-desc {
+  outline: none;
+  border: none;
+  background-color: #e3e3e381;
+  font-family: inherit;
+
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 16px;
+  margin-top: 1rem;
+
+  min-width: 100%;
+}

@@ -1,0 +1,76 @@
+.verification-page-container {
+  width: 100vw;
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-color);
+}
+
+.verificatoion-page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  width: min(500px, 95%);
+
+  padding: 3rem 2rem;
+
+  border-radius: 30px;
+  background-color: var(--white);
+}
+
+.verification-page-text-header {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.verification-page-text {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.verification-page-form {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.verification-page-form button {
+  margin-top: 1.5rem;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--fill-color);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  color: var(--white);
+
+  transition: 0.2s all ease-in-out;
+}
+
+.verification-page-form button:hover {
+  background-color: var(--base-color);
+}
+
+@media screen and (max-width: 490px) {
+  .signup-page {
+    padding: 2rem 1rem;
+    border-radius: 15px;
+  }
+}

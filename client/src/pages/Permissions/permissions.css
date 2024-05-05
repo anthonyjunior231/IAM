@@ -1,0 +1,17 @@
+.permissions {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+}
+
+.permissions-sidebar {
+  flex: 1;
+  height: 100%;
+}
+
+.permissions-board {
+  flex: 4;
+}
+
+

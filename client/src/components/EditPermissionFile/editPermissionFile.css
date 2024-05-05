@@ -1,0 +1,55 @@
+.edit-permission-file {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+  align-items: center;
+}
+
+.edit-permission-file-left {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+.edit-permission-file-left div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.edit-permission-file-big-text {
+  font-weight: 500;
+}
+
+.edit-permission-file-small-text {
+  font-weight: 300;
+  color: var(--secondary-text-color);
+  font-size: 0.8rem;
+}
+
+.permission-input-slider {
+  background-color: var(--slider-color);
+  outline: 1px solid var(--outline-color);
+  width: 3.3rem;
+  border-radius: 18px;
+  height: 1.7rem;
+
+  position: relative;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+}
+
+.permission-input-circle {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  height: 80%;
+  width: 1.34rem;
+  background-color: var(--white);
+  transition: 0.2s ease-in-out all;
+}

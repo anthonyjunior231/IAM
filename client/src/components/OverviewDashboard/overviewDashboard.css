@@ -1,0 +1,156 @@
+.overview-dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+
+  width: 100%;
+}
+
+.overview-dashboard-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+.overview-roles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-radius: 8px;
+
+  background-color: var(--outline-color);
+
+  max-width: fit-content;
+  height: 2.5rem;
+}
+.overview-roles span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 0 0.6rem;
+  color: var(--secondary-text-color);
+
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  cursor: pointer;
+
+  transition: 0.1s all ease-in-out;
+}
+
+.overview-dashboard-middle {
+  margin-top: 1.5rem;
+}
+.users-access-text {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.overview-dashboard-bottom {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5em;
+}
+
+.overview-dashboard-bottom-left {
+  flex: 3;
+  padding: 1rem 0;
+  overflow-x: auto;
+}
+
+.overview-dashboard-bottom-right {
+  flex: 1.5;
+}
+
+.overview-dashboard-table-header {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 4fr) minmax(100px, 1fr)
+    minmax(150px, 3fr);
+  gap: 1rem;
+  gap: 1rem;
+}
+
+.overview-dashboard-table-header input {
+  max-width: fit-content;
+}
+
+.overview-dashboard-table-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  min-height: 30rem;
+}
+
+.overview-dashboard-bottom-right {
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  border: 1px solid var(--outline-color);
+
+  max-height: 30rem;
+  overflow-y: auto;
+}
+
+.recent-activities-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.recent-activities {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  height: 30rem;
+}
+
+.loading-div {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 840px) {
+  .overview-dashboard {
+    width: 100vw;
+  }
+  .overview-dashboard-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .overview-dashboard {
+    padding: 1.5rem 0.5rem;
+  }
+  .overview-dashboard-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .overview-dashboard-bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.decline-span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}

@@ -1,0 +1,13 @@
+.request-access-page {
+  height: 100%;
+  display: flex;
+}
+
+.manage-access-top {
+  margin: auto;
+  width: min(500px, 95%);
+}
+
+.manage-access-top > * {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+}
+
+.home-sidebar {
+  flex: 1;
+  height: 100%;
+}
+
+.home-dashboard {
+  flex: 4;
+}
